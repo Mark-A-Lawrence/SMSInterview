@@ -1,0 +1,375 @@
+/* Body Style */
+*{
+    margin: 0;
+    padding: 0;
+    border:none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+html{
+    font-family:sans-serif;
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%}
+        
+body{
+    margin:0;
+    background:#E5E5E5;
+}
+
+/* ---------------------------------------------------------------- */
+/* Media changes */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+      /* tablets */
+    .menu-center{
+        display: none;
+    }
+
+    .card{
+        width: auto;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .menu-center{
+        display: none;
+    }
+
+    .card{
+        width: auto;
+    }
+
+    
+  }
+
+/* ------------------------------------------ */
+
+
+/* Search box */
+#search{
+
+    position: static;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 8px 0px;
+}
+.container{
+    padding-top: 3vh;
+}
+
+.right-inner-addon {
+    position: relative;
+}
+.right-inner-addon input {
+    padding-right: 35px;
+  
+}
+.right-inner-addon i {
+    position: absolute;
+    right: 12px;
+    padding: 12px 12px;
+    pointer-events: none;
+}
+
+/* ------------------------------------------------------------------ */
+
+/* Dropdown */
+.sort{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 10px;
+
+
+}
+
+.homeworld{
+    border: #B8B8B8 solid 1px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 6px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    position: static;
+    width: 150px;
+    height: 32px;
+
+}
+
+/* ------------------------------------------------------- */
+
+
+/* Button switch */
+
+.switch button{
+    float: left;
+    width: 60px;
+    height: 32px;
+    border: 1px solid #B8B8B8;
+    box-sizing: border-box;
+ 
+
+
+}
+
+.DESC{
+    border-radius: 0px 4px 4px 0px;
+}
+
+.ASC{
+    border: 1px solid #B8B8B8;
+    box-sizing: border-box;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.ASC,.DESC{
+    background-color: #FFF;
+
+}
+
+.active-switch{
+    background-color: #B8B8B8;
+}
+/* ------------------------------------------- */
+
+/* menu */
+
+.menu-left{
+    text-align: left;
+}
+
+.menu-left button{
+    width: 112px;
+    height: 32px;
+
+    /* default/shade/white */
+    background: #FFFFFF;
+    border-radius: 4px;
+
+
+}
+
+.menu-center{
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #3B3B3B;
+   
+}
+
+.menu-right{
+    text-align: right;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #3B3B3B;
+}
+
+
+
+.menu-right button{
+    text-align: right;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #3B3B3B;
+    border-radius: 4px;
+    border:solid 0.5px #3B3B3B;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 12px;
+    padding-left: 12px;
+    float: right;
+}
+/* --------------------------------------------------- */
+
+
+/* Bread crumb */
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+   
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #757575;
+    content: "\276D";
+  }
+
+  ul.breadcrumb .active{
+      color: #969696;
+  }
+
+/* ------------------------------------------------------------- */
+
+/* card grid */
+
+/* Cards style */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 24px;
+    justify-content: center;
+  }
+
+.card{
+    cursor: pointer;
+    position: static;
+    min-width: 216px;
+    height: 282px;
+    left: 0px;
+    top: 0px;
+
+    /* default/shade/white */
+    background: #FFFFFF;
+    border-radius: 8px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 24px;
+}
+
+.card-1{
+    cursor: pointer;
+    position: static;
+    min-width: 216px;
+    height: 350px;
+    left: 0px;
+    top: 0px;
+
+    /* default/shade/white */
+    background: #FFFFFF;
+    border-radius: 8px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 24px;
+}
+
+.card-head{
+    color:white;
+    background: #969696;
+    height: 98px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding:16px ;
+}
+
+.card-name{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 24px;
+}
+.card-body{
+    padding-right: 16px;
+    padding-left:16px;
+    padding-top: 16px;
+
+}
+.card-divider{
+    background: #D4D4D4;
+    border-radius: 2px;
+    height: 2px;
+    margin-top: -12px;
+}
+
+.gender{
+   text-align: left;
+   display: flex;
+   padding: none;
+}
+
+.species{
+    text-align: right;
+}
+
+.gender-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.card-text-1{
+    color:#3B3B3B;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.card-row-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    margin-top: 6px;
+    position: static;
+    height: 32px;
+    left: 0px;
+    top: 0px;
+    background: #EDEDED;
+    border-radius: 4px;
+}
+.card-row-2 div{
+    float:left;
+    padding-top: 16px;
+}
+
+.card-col-2{
+    width: 30%;  
+}
+
+.card-col-2-lg{
+    width:70%;
+}
+
+.info-text{
+    text-align: right;
+}
+
+.info-label{
+    text-align: left;
+}
+
+
+/* --------------------------------- */
+
+
